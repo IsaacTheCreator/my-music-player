@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Music Player</h1>
+        <div id="musicPlayer">
+            <img id="coverImage" src="cover.jpg" alt="Cover Image">
+            <p id="songName">Song Name</p>
+            <audio id="audioPlayer" controls autoplay onended="nextTrack()"></audio>
+        </div>
+        <div class="controls">
+            <button id="shuffleBtn">Shuffle Off</button>
+            <button id="prevBtn">Previous</button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <ul id="playlist"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.311); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #198038;
+}
+
+/* Add this CSS for cover image */
+#coverImage {
+    width: 200px; /* Set a fixed width for the cover image */
+    height: 200px; /* Set a fixed height for the cover image */
+    border-radius: 10px; /* Add rounded corners */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    transition: opacity 0.5s ease-in-out; /* Add fade in animation */
+}
+
+/* Add this CSS for the default cover image */
+#defaultCover {
+    width: 200px; /* Set a fixed width for the default cover image */
+    height: 200px; /* Set a fixed height for the default cover image */
+    border-radius: 10px; /* Add rounded corners */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+/* Add this CSS for the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.441); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Add this CSS for the container */
+#musicPlayer {
+    position: relative;
+    width: 100%;
+}
+
+/* Add this CSS for the cover image */
+#coverImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Add this CSS for the song title */
+#songName {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: scrollText 15s linear infinite;
+}
+
+/* Add this keyframes for scrolling animation */
+@keyframes scrollText {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
